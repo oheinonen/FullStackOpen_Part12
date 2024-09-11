@@ -1,0 +1,17 @@
+Script started on 2024-09-11 18:18:20+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+
+]0;heinonos@lx0-fuxi061: ~/Documents/FullStackOpen/part12-containers-applications-main[01;32mheinonos@lx0-fuxi061[00m:[01;34m~/Documents/FullStackOpen/part12-containers-applications-main[00m$ 
+]0;heinonos@lx0-fuxi061: ~/Documents/FullStackOpen/part12-containers-applications-main[01;32mheinonos@lx0-fuxi061[00m:[01;34m~/Documents/FullStackOpen/part12-containers-applications-main[00m$ exit[Kdocker container run -it ubuntu bash
+[?2004h]0;root@24db82fb40ad: /root@24db82fb40ad:/# mkdir [7m/usr/src/app[27m/usr/src/app
+[?2004l[?2004h]0;root@24db82fb40ad: /root@24db82fb40ad:/# touch usr/s
+sbin/  share/ src/   
+]0;root@24db82fb40ad: /root@24db82fb40ad:/# touch usr/s     /usr/
+bin/     include/ lib32/   libexec/ local/   share/   
+games/   lib/     lib64/   libx32/  sbin/    src/     
+]0;root@24db82fb40ad: /root@24db82fb40ad:/# touch /usr/src/app/indexj .js
+[?2004l[?2004h]0;root@24db82fb40ad: /root@24db82fb40ad:/# [Kexit
+[?2004lexit
+]0;heinonos@lx0-fuxi061: ~/Documents/FullStackOpen/part12-containers-applications-main[01;32mheinonos@lx0-fuxi061[00m:[01;34m~/Documents/FullStackOpen/part12-containers-applications-main[00m$ exit
+exit
+
+Script done on 2024-09-11 18:19:49+03:00 [COMMAND_EXIT_CODE="0"]
