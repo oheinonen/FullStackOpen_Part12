@@ -1,0 +1,65 @@
+Script started on 2024-09-12 16:11:44+03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="101" LINES="55"]
+
+]0;heinonos@lx0-fuxi061: ~/Documents/FullStackOpen/part12-containers-applications-main[01;32mheinonos@lx0-fuxi061[00m:[01;34m~/Documents/FullStackOpen/part12-containers-applications-main[00m$ 
+]0;heinonos@lx0-fuxi061: ~/Documents/FullStackOpen/part12-containers-applications-main[01;32mheinonos@lx0-fuxi061[00m:[01;34m~/Documents/FullStackOpen/part12-containers-applications-main[00m$ docker exec -it t odo-backend-mongo-1 bash
+[?2004hroot@c27df3c3e9fb:/# ^?[K[7mmongosh[27mmongosh   h -u root -p example
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	66e2e8dcf60772caa75e739b
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.0[0m
+Using MongoDB:		7.0.14
+[1m[33mUsing Mongosh[0m:		2.3.0
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2024-09-12T13:11:25.947+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2024-09-12T13:11:26.625+00:00: Soft rlimits for open file descriptors too low
+[1m[33m------[0m
+
+[1G[0Jtest> [7Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m        108.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   56.00 KiB
+[1G[0Jtest> [7Guse the_database
+switched to db the_database
+[1G[0Jthe_database> [15Gshow collestions[1G[0Jthe_database> show collestion[30G[1G[0Jthe_database> show collestio[29G[1G[0Jthe_database> show collesti[28G[1G[0Jthe_database> show collest[27G[1G[0Jthe_database> show colles[26G[1G[0Jthe_database> show colle[25Gctions
+[1mtodos[0m
+[1G[0Jthe_database> [15Gtoso.[1G[0Jthe_database> toso[19G[1G[0Jthe_database> tos[18G[1G[0Jthe_database> to[17Gdos.Ins[1G[0Jthe_database> todos.In[23G[1G[0Jthe_database> todos.I[22G[1G[0Jthe_database> todos.[21GinsertOne({tes[1G[0Jthe_database> todos.insertOne({te[34Gxc[1G[0Jthe_database> todos.insertOne({tex[35Gt[33mtext[39m: [32m"[39m[1G[0Jthe_database> todos.insertOne({[33mtext[39m: [38G[32m"[39m[32mI[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m [32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m [32mb[39m[32me[39m[32ml[39m[32mt[39m[32m"[39m.[1G[0Jthe_database> todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m[84G, d[36mdo[39mdone: fals[33mfalse[39m})
+Uncaught [1m[31mReferenceError[0m: todos is not defined
+[1G[0Jthe_database> [15G[1G[0Jthe_database> todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[99G[1D[1G[0Jthe_database> todos.insertOne[44m([49m{[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[98G[1D[1G[0Jthe_database> todos.insertOne([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[97G[5D[1G[0Jthe_database> todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[92G[2D[4D[3D[1G[0Jthe_database> todos.insertOne({[33mtext[39m: [44m[32m"[49mIncrease the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[83G[4D[1G[0Jthe_database> todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[79G[5D[3D[3D[6D[3D[7D[4D[9D[1D[1G[0Jthe_database> todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt[44m"[39m[49m, [33mdone[39m: [33mfalse[39m})[38G[2D[1G[0Jthe_database> todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[36G[4D[2D[1G[0Jthe_database> todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[30G[9D[1G[0Jthe_database> todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[21G[1D[5D[1G[0Jthe_database> dtodos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[16G[1G[0Jthe_database> dbtodos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[17G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m}) [18G[1A[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m}) [1G
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId([32m'66e2e93af60772caa75e739c'[39m)
+}
+[1G[0Jthe_database> [15Gdb.todos.din[1G[0Jthe_database> db.todos.di[26G[1G[0Jthe_database> db.todos.d[25G[1G[0Jthe_database> db.todos.[24Gfind({(][1G[0Jthe_database> db.todos.find({([31G[1G[0Jthe_database> db.todos.find({[30G})
+[
+  {
+    _id: ObjectId([32m'66e29b3f063900761a5e739c'[39m),
+    text: [32m'Updated todo text'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'66e29b3f063900761a5e739d'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'66e2e93af60772caa75e739c'[39m),
+    text: [32m'Increase the number of tools in my tool belt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15G
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+[1G[0Jthe_database> [15G
+[?2004hroot@c27df3c3e9fb:/# exit
+[?2004lexit
+]0;heinonos@lx0-fuxi061: ~/Documents/FullStackOpen/part12-containers-applications-main[01;32mheinonos@lx0-fuxi061[00m:[01;34m~/Documents/FullStackOpen/part12-containers-applications-main[00m$ exit
+exit
+
+Script done on 2024-09-12 16:15:08+03:00 [COMMAND_EXIT_CODE="0"]
