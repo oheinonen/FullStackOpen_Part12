@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-
 const configs = require('../util/config');
-const { getAsync } = require('../redis');
+const { getAsync, setAsync } = require('../redis');
+const { Todo } = require('../mongo');
 
 let visits = 0
 
@@ -18,7 +18,12 @@ router.get('/', async (req, res) => {
 
 /* GET statistics on added todoss. */
 router.get('/statistics', async (req, res) => {
-  const added_todos = await getAsync('added_todos')
+  let added_todos = await getAsync('added_todos')
+  if (!added_todos) {
+    await setAsync('added_todos', 0)
+    added_todos = await getAsync('added_todos')
+  }
+
   res.send({
     added_todos
   });
