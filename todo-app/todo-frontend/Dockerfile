@@ -10,9 +10,7 @@ ENV VITE_BACKEND_URL='http://localhost:3000'
 
 RUN npm run build
 
-RUN npm install -g serve
-
-CMD ["serve", "dist"]
+RUN npm run test:ci
 
 FROM nginx:1.25-alpine
 
