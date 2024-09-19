@@ -1,0 +1,11 @@
+services:
+  server:
+    image: blog-backend-dev
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - 3003:3003
+    container_name: blog-backend-dev
