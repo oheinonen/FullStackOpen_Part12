@@ -1,0 +1,27 @@
+services:
+  app:
+    build:
+      context: ./blog-front
+    environment:
+      REACT_APP_BACKEND_URI: ${REACT_APP_BACKEND_URI}
+    container_name: blog-front
+
+  server:
+    image: blog-back
+    build:
+      context: ./blog-back
+    environment:
+      MONGODB_URI: ${MONGODB_URI}
+      SECRET: ${SECRET}
+    container_name: blog-back
+
+  nginx:
+    image: nginx:1.20.1
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 8080:80
+    container_name: reverse-proxy-blog-prod
+    depends_on:
+      - app
+      - server
